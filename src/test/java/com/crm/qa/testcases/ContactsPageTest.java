@@ -35,17 +35,14 @@ public class ContactsPageTest extends TestBase{
 		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
 	}
-
 	@Test(priority = 1)
 	public void verifyContactsPageLabelTest() {
 		Assert.assertTrue(contactsPage.verifyContactsLabel());
 	}
-	
 	@Test(priority = 2)
 	public void selectContactsTest() {
 		contactsPage.selectContactsByName("Test Test");
 	}
-	
 	@Test(priority = 3)
 	public void selectMutltipleContactsTes() {
 		contactsPage.selectContactsByName("Test Test");
